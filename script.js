@@ -1,25 +1,12 @@
-// for (initialValue; whileSomething; changeExpression)
+const target = Math.floor(Math.random * 10)
+// setting target as a constant 
 
-// for (let i=1; i<=10; i++) {
-//     console.log(`we are on row number ${i}`)
-// }
+let guess = Math.floor(Math.random * 10)
+// we will (prob) have multiple guesses - so we can set guess as a var
 
-// another example
-// for (let i=50; i>=0; i-=10) {
-//     console.log('hello' + i)
-// }
-
-// this is an infinite loop ^
-
-// const animals = ['lions', 'tigers', 'bears']
-// 
-// for (let i=0; i<=animals.length; i++) {
-//     console.log(i, animals[i])
-// }
-
-// spelling something backwards
-const word = 'dessert'
-for (let i=word.length-1; i>=0; i--) {
-    reversedWord += word[i]
+while (guess !== target) {
+	console.log(`guess: ${guess} target: ${target}`)
+	guess = Math.floor(Math.random * 10)
 }
-console.log(reversedWord)
+console.log(`guess: ${guess} target: ${target}`)
+console.log(`you win!!`)
