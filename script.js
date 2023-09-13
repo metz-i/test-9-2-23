@@ -1,13 +1,21 @@
-const target = Math.floor(Math.random * 10)
-// setting target as a constant 
+const movieReviews = {
+    'Arrival' : 9.5,
+    'Alien' : 9,
+    'Amelie' : 8,
+    'In Bruges' : 9
+}
 
-let guess = Math.floor(Math.random * 10)
-// we will (prob) have multiple guesses - so we can set guess as a var
+// printing the movie (key) + rating (value)
+for (let movie of Object.keys(movieReviews)) {
+    console.log(movie, movieReviews[movie])
+}
 
-// while (guess !== target) {
-// 	console.log(`guess: ${guess} target: ${target}`)
-// 	guess = Math.floor(Math.random * 10)
-// }
-// console.log(`guess: ${guess} target: ${target}`)
-// console.log(`you win!!`)
 
+const ratings = Object.values(movieReviews)
+let total = 0 // counter
+
+for (let score of ratings) {
+    total += score
+}
+
+console.log(total /= ratings.length) // avg
