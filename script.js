@@ -49,3 +49,12 @@
 function sum (x,y) {
     console.log(x+y)
 }
+
+function isPurple(arr) {
+    for (let color of arr) {
+        if (color === "purple" || color === "magenta") {
+            return true
+        }
+    }
+    return false
+}
