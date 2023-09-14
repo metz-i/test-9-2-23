@@ -13,3 +13,24 @@ function isValid(username, password) {
     }
     return false
 } 
+
+
+// function for avg
+function avg(arr) {
+    let total = 0
+    for (let num of arr) {
+        total += num
+    }
+    return total / arr.length
+}
+
+
+// function for pangram validation
+function isPangram(sentence) {
+    for (char in 'abcdefghijklmmnopqrstuvwxyz') {
+        if (sentence.indexOf(char) == -1) {
+            return false
+        } 
+    }
+    return true
+}
