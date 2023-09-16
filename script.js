@@ -27,10 +27,151 @@ function avg(arr) {
 
 // function for pangram validation
 function isPangram(sentence) {
+    let lowerCased = sentence.toLowerCase()
     for (char in 'abcdefghijklmmnopqrstuvwxyz') {
-        if (sentence.indexOf(char) == -1) {
+        if (lowerCased.indexOf(char) == -1) {
             return false
         } 
     }
-    return true
+    return true``
+}
+function isValid(username, password) {
+    if (password.length >= 8 && !password.indexOf(' ') == -1 && !password.indexOf(username) == -1) {
+        return true
+    }
+    return false
+} 
+
+
+// function for avg
+function avg(arr) {
+    let total = 0
+    for (let num of arr) {
+        total += num
+    }
+    return total / arr.length
+}
+
+
+// function for pangram validation
+function isPangram(sentence) {
+    let lowerCased = sentence.toLowerCase()
+    for (char in 'abcdefghijklmmnopqrstuvwxyz') {
+        if (lowerCased.indexOf(char) == -1) {
+            return false
+        } 
+    }
+    return true``
+}
+function isValid(username, password) {
+    if (password.length >= 8 && !password.indexOf(' ') == -1 && !password.indexOf(username) == -1) {
+        return true
+    }
+    return false
+} 
+
+
+// function for avg
+function avg(arr) {
+    let total = 0
+    for (let num of arr) {
+        total += num
+    }
+    return total / arr.length
+}
+
+
+// function for pangram validation
+function isPangram(sentence) {
+    let lowerCased = sentence.toLowerCase()
+    for (char in 'abcdefghijklmmnopqrstuvwxyz') {
+        if (lowerCased.indexOf(char) == -1) {
+            return false
+        } 
+    }
+    return true``
+}
+function isValid(username, password) {
+    if (password.length >= 8 && !password.indexOf(' ') == -1 && !password.indexOf(username) == -1) {
+        return true
+    }
+    return false
+} 
+
+
+// function for avg
+function avg(arr) {
+    let total = 0
+    for (let num of arr) {
+        total += num
+    }
+    return total / arr.length
+}
+
+
+// function for pangram validation
+function isPangram(sentence) {
+    let lowerCased = sentence.toLowerCase()
+    for (char in 'abcdefghijklmmnopqrstuvwxyz') {
+        if (lowerCased.indexOf(char) == -1) {
+            return false
+        } 
+    }
+    return true``
+}
+function isValid(username, password) {
+    if (password.length >= 8 && !password.indexOf(' ') == -1 && !password.indexOf(username) == -1) {
+        return true
+    }
+    return false
+} 
+
+
+// function for avg
+function avg(arr) {
+    let total = 0
+    for (let num of arr) {
+        total += num
+    }
+    return total / arr.length
+}
+
+
+// function for pangram validation
+function isPangram(sentence) {
+    let lowerCased = sentence.toLowerCase()
+    for (char in 'abcdefghijklmmnopqrstuvwxyz') {
+        if (lowerCased.indexOf(char) == -1) {
+            return false
+        } 
+    }
+    return true``
+}
+function isValid(username, password) {
+    if (password.length >= 8 && !password.indexOf(' ') == -1 && !password.indexOf(username) == -1) {
+        return true
+    }
+    return false
+} 
+
+
+// function for avg
+function avg(arr) {
+    let total = 0
+    for (let num of arr) {
+        total += num
+    }
+    return total / arr.length
+}
+
+
+// function for pangram validation
+function isPangram(sentence) {
+    let lowerCased = sentence.toLowerCase()
+    for (char in 'abcdefghijklmmnopqrstuvwxyz') {
+        if (lowerCased.indexOf(char) == -1) {
+            return false
+        } 
+    }
+    return true``
 }
