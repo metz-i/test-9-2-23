@@ -26,5 +26,9 @@ for (let num of numbers) {
 }
 
 
-words.map(function(word) {
-    return word.toUpperCase().split('').join('.')})
+const abbrev = words.map(function(word) {
+    return word.toUpperCase().split('').join('.') 
+    // takes each word in words
+    // makes them uppercase
+    // every other letter (within word) we will separate them and add a '.'
+})
