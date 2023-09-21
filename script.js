@@ -1,34 +1,31 @@
-// map
+let movies = [
+    "Fantastic Mr. Fox",
+    "Mr. and Mrs. Smith",
+    "Mrs. Doubtfire"
+]
 
-// const texts = ['rofl', 'lmao', 'smh', 'omg']
-// const caps = texts.map(function (t) {
-//     return t.toUpperCase()
-// })
+let movie = movies.find(movie => {
+    return movie.includes('Mrs.')
+}) // "Mr. and Mrs. Smith"
 
-const numbers = [20, 21, 22, 23, 24, 25, 26, 27]
-const words = ['asap', 'byob', 'rsvp', 'diy']
-
-const doubles = numbers.map(function (num) {
-    return num * 2 // anonymous function inside map function parentheses (arg)
-})
-
-const numDetail = numbers.map(function(n) {
-    return {
-        value: n,
-        isEven: n%2 === 0
-    }   
-})
-
-// below example accomplishes same thing as first example
-const doubles2 = [] // empty array
-for (let num of numbers) {
-    doubles2.push(num * 2) // adding(pushing) doubled #s from another array into the empty array
-}
+let movie2 = movies.find(m => m.indexOf('Mrs') === 0)
+// finding movie within movies where first word is "Mrs" 
+// and adding it to array `movie2`
+// returns "Mrs. Doubtfire"
 
 
-const abbrev = words.map(function(word) {
-    return word.toUpperCase().split('').join('.') 
-    // takes each word in words
-    // makes them uppercase
-    // every other letter (within word) we will separate them and add a '.'
-})
+// `every` function
+const words = ['dog', 'dig', 'log', 'bag', 'wag']
+
+words.every(word => {
+    return word.length === 3
+}) // tests whether every word meets condition that the length is 3 characters long
+// True
+
+words.every(word => word[0] === 'd') // False
+
+words.every(w => {
+    let last_letter = w[w.length - 1]
+    return last_letter === 'g'
+}) // checking if every w in words has 'g' as the last letter
+// True
