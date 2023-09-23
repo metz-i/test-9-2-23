@@ -24,19 +24,23 @@ const maxGrade = grades.reduce((max, currVal) => {
     return Math.max(max, currVal)
 })
 
-// reduce function - specifying max/accumulator parameter
-const sum = [10, 5, 8, 3, 4].reduce((sum, currVal) => {
-    return sum + currVal}, 1000) //start at 1000 and add the currVal
+// // reduce function - specifying max/accumulator parameter
+// const sum = [10, 5, 8, 3, 4].reduce((sum, currVal) => {
+//     return sum + currVal}, 1000) //start at 1000 and add the currVal
+// 
+// // reduce function - tally
+// const votes = ['y', 'x', 'y', 'y', 'y', 'x']
+// const results = votes.reduce((tally, voteValue) => {
+//     if (tally[voteValue]) {
+//         tally[voteValue]++
+//     // won't run at first but adds 1 every time thereafter 
+//     } else {
+//         tally[voteValue] = 1
+//     }
+//     return tally
+// }, {})
 
-// reduce function - tally
-const votes = ['y', 'x', 'y', 'y', 'y', 'x']
-const results = votes.reduce((tally, voteValue) => {
-    if (tally[voteValue]) {
-        tally[voteValue]++
-    // won't run at first but adds 1 every time thereafter 
-    } else {
-        tally[voteValue] = 1
-    }
-    return tally
-}, {})
 
+const greet = (person, greeting = 'hi') => {
+    console.log(`${greeting}, ${person}!`)
+}
