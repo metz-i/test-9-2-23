@@ -33,3 +33,6 @@ const getStats = (arr) => {
         avg, //  avg: avg
     }
 }
+
+const ratings = [4.0, 5.0, 3.8, 3.2, 4.5]
+const movieStats = getStats(ratings)
