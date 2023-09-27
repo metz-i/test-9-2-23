@@ -1,6 +1,5 @@
 # INTRODUCTION
--Practicing using the shorthand object property for returning an object from array stats. 
--Example of computed property
+-Shorthand syntax for including methods (functions) in an object.
 
 
 

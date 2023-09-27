@@ -1,18 +1,22 @@
-const role = 'Host'
-const person = 'JH'
-
-// const team = {
-//     role: person,  
-// }
-// team[role] = person
- 
-// computed properties
-const role2 = 'Director'
-const person2 = "JC"
-// team[role2] = person2
-
-const team = {
-    [role]: person,
-    [role2]: person2
+// more computed properties
+const addProp = (obj, k, v) => { // specifying the object, key, value to be added
+    return {
+        ...obj, // 
+        [k]: v
+    }
 }
 
+const res = addProp(team, 'happy', ':)')
+
+
+// shorthand method syntax
+const math = {
+    blah: 'Hi',
+    add(x, y) {
+        return x + y
+    },
+    multiply(x, y) {
+        return x * y
+    }
+}
+math.add(50, 60)
