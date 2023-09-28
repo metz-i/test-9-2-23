@@ -20,3 +20,14 @@ const math = {
     }
 }
 math.add(50, 60)
+
+// logging in example - shorthand syntax for methods within objects
+const auth = {
+    username: 'TommyBot',
+    login() {
+        console.log('logged you in')
+    },
+    logout() {
+        console.log('goodbye')
+    }
+}
