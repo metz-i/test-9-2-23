@@ -31,3 +31,18 @@ const auth = {
         console.log('goodbye')
     }
 }
+
+// `this` keyword
+const person = {
+    first: 'Cherilyn',
+    last: 'Sarkisian',
+    nickname: 'Cher',
+    fullName() {
+        const {
+            first,
+            last,
+            nickname
+        } = this
+    console.log(`${first} ${last} AKA ${nickname}`)
+    }
+}
