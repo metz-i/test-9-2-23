@@ -1,5 +1,5 @@
 # INTRODUCTION
--`this` keyword allows for convenience/concision/readability with referencing parts of the same scope
+-using the `this` keyword in a series of function that generate "annoying" messages every 3 seconds.
 
 
 

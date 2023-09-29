@@ -46,3 +46,23 @@ const person = {
     console.log(`${first} ${last} AKA ${nickname}`)
     }
 }
+
+// Annoyomatic Demo
+const annoyer = {
+    phrases: ['literally', 'cray', 'can\'t even', 'totes', 'yolo', 'can\'t stop, won\'t stop'],
+    pickPhrase() { //function component for picking random phrase
+        const {
+            phrases
+        } = this; // specifying enclosing scope/object `annoyer` as `this` 
+        const idx = Math.floor(Math.random() * phrases.length) // generating random index
+        return phrases[idx]
+    },
+    start() { // function component for console-ing the random phrase that was picked
+        this.timerId = setInterval(() => { //  timerID allows us to reference the timer again to stop it
+            console.log(this.pickPhrase())
+        }, 3000)
+    },
+    stop() {
+        clearInterval(this.timerID)
+    }
+}
