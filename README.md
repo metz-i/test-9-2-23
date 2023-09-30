@@ -1,5 +1,5 @@
 # INTRODUCTION
--using the `this` keyword in a series of function that generate "annoying" messages every 3 seconds.
+-using JS methods and functions to create a deck of cards and draw some
 
 
 

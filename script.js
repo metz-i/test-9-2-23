@@ -66,3 +66,30 @@ const annoyer = {
         clearInterval(this.timerID)
     }
 }
+
+// deck of cards example
+function makeDeck() { // declaring my function
+	const suits = ['hearts', 'diamonds', 'spades', 'clubs'];
+	const values = '2,3,4,5,6,7,8,9,10,J,Q,K,A';
+	const deck = []; // starting with my empty deck - this is where my randomly drawn cards from suits + values will go
+	
+	for (let value of values.split(',')) { 
+	// looping through each value in values (provided that they are split among the commas)
+		for (let suit of suits) { // looping through each each suit in suits
+		deck.push({value: value, suit: suit}) // we move the value and suit
+		}
+	}
+	return deck; // when done looping through all elements in both arrays, we can return the deck
+}
+
+function drawCard(deck) {
+	return deck.pop() // taking a "card" off the end of `deck`
+}
+
+// const Deck1 = makeDeck();
+// const card1 = drawCard(Deck1); 
+
+const deck2 = {
+	deck: [],
+	initializeDeck(){}
+}
