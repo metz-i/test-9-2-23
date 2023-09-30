@@ -1,5 +1,5 @@
 # INTRODUCTION
--using `this` and destructuring to create a deck of cards and draw some
-
+-using the DOM method to change what a webpage displays
+-using `getElementBy` methods to select components of a webpage
 
 

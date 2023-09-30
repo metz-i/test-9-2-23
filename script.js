@@ -1,25 +1,23 @@
-// building a deck and drawing a card using destructuring and `this`
-const makeDeck = {
-    deck: [],
-    values: 'A,2,3,4,5,6,7,8,9,10,J,Q,K',
-    suits: ['hearts', 'spades', 'clubs', 'diamonds'], 
-    initializeDeck() {
-        const {
-            suits,
-            deck,
-            values
-        } = this;
-        for (value of values.split(',')) {
-            for (suit of suits) {
-                return deck.push({
-                    value,
-                    suit
-                })
-            }
-        }
-        // return deck
-    },
-    drawCard(){
-        return this.deck.pop()
-    }
-}
+// getElementByID
+// type this in the console:
+// const ul = document.getElementById('main')
+// > undefined
+// ul
+// > <ul id='main'>...</ul>
+// console.dir(ul)
+// > p#main
+// > undefined
+
+
+// getElementsByTagName
+// "I want all the <h1> and <p> in a document(page)"
+// document.getElementsByTagName('input')
+// >HTMLCollection (3) = $1
+// >0 <input type="text" placeholder="username">
+// >1 <input type="password" placeholder="passcode">
+// >2 <input type="submit">
+
+
+// getElementsByClassName
+// document.getElementsByClassName('header')
+// ><h1 class="header">Nalita Balita Hospitality Enterprises, LLC</h1>
