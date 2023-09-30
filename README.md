@@ -1,5 +1,5 @@
 # INTRODUCTION
--using JS methods and functions to create a deck of cards and draw some
+-using `this` and destructuring to create a deck of cards and draw some
 
 
 
