@@ -1,23 +1,17 @@
-// getElementByID
-// type this in the console:
-// const ul = document.getElementById('main')
-// > undefined
-// ul
-// > <ul id='main'>...</ul>
-// console.dir(ul)
-// > p#main
-// > undefined
-
-
-// getElementsByTagName
-// "I want all the <h1> and <p> in a document(page)"
-// document.getElementsByTagName('input')
-// >HTMLCollection (3) = $1
-// >0 <input type="text" placeholder="username">
-// >1 <input type="password" placeholder="passcode">
-// >2 <input type="submit">
-
-
-// getElementsByClassName
-// document.getElementsByClassName('header')
-// ><h1 class="header">Nalita Balita Hospitality Enterprises, LLC</h1>
+function textContent(rootNode) {
+    if ('textContent' in document.createTextNode(''))
+      return rootNode.textContent;
+  
+    var childNodes = rootNode.childNodes,
+        len = childNodes.length,
+        result = '';
+    
+    for (var i = 0; i < len; i++) {
+      if (childNodes[i].nodeType === 3)
+        result += childNodes[i].nodeValue;
+      else if (childNodes[i].nodeType === 1) 
+        result += textContent(childNodes[i]);
+    }
+  
+    return result;
+  }
