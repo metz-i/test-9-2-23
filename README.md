@@ -1,2 +1,2 @@
 # INTRODUCTION
--async function example with `.then` 
+-axios

@@ -1,11 +1,9 @@
-async function greet() {
-    return 'hello';
-}
-
-greet().then((val) => {
-    console.log('promise resolved with: ', val);
-})
-
-async function add(x, y) {
-    return x + y;
-}
+axios
+    .get('https://swapi.co/api/planeasjdhadkt')
+    .then((res) => {
+        console.log(res.data);
+    })
+    .catch((err) => {
+        console.log('IN CATCH CALLBACK!!');
+        console.log(err);
+    });
