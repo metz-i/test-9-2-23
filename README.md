@@ -1,2 +1,2 @@
 # INTRODUCTION
--axios
+-fetch - resolve and reject scenarios 
