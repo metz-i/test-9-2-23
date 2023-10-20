@@ -1,2 +1,3 @@
 # INTRODUCTION
--fetch - resolve and reject scenarios 
+-illustrating call stack
+
