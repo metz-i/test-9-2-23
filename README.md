@@ -1,3 +1,3 @@
 # INTRODUCTION
--illustrating call stack
+-using axios, .then()to retrieve and display data from Star Wars API
 
