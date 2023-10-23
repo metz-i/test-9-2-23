@@ -1,3 +1,3 @@
 # INTRODUCTION
--using axios, .then()to retrieve and display data from Star Wars API
+-workers - running tasks in a separate thread of execution
 
